@@ -116,33 +116,33 @@ resource "kubernetes_deployment" "prometheus" {
 
                     }
 
-                    readiness_probe {
-
-                        http_get {
-
-                            path = "/"
-                            port = 9090
-
-                        }
-
-                        initial_delay_seconds = 15
-                        timeout_seconds       = 5
-
-                    }
-
-                    liveness_probe {
-
-                        http_get {
-
-                            path = "/"
-                            port = 9090
-
-                        }
-
-                        initial_delay_seconds = 15
-                        timeout_seconds       = 5
-
-                    }
+                    #                    readiness_probe {
+                    #
+                    #                        http_get {
+                    #
+                    #                            path = "/"
+                    #                            port = 9090
+                    #
+                    #                        }
+                    #
+                    #                        initial_delay_seconds = 15
+                    #                        timeout_seconds       = 5
+                    #
+                    #                    }
+                    #
+                    #                    liveness_probe {
+                    #
+                    #                        http_get {
+                    #
+                    #                            path = "/"
+                    #                            port = 9090
+                    #
+                    #                        }
+                    #
+                    #                        initial_delay_seconds = 15
+                    #                        timeout_seconds       = 5
+                    #
+                    #                    }
 
                     volume_mount {
 
