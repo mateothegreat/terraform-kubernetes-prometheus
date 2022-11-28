@@ -11,12 +11,12 @@ resource "kubernetes_service" "prometheus" {
 
         }
 
-        annotations = {
-
-            "service.beta.kubernetes.io/aws-load-balancer-type"     = "nlb"
-            "service.beta.kubernetes.io/aws-load-balancer-internal" = "true"
-
-        }
+        #        annotations = {
+        #
+        #            "service.beta.kubernetes.io/aws-load-balancer-type"     = "nlb"
+        #            "service.beta.kubernetes.io/aws-load-balancer-internal" = "true"
+        #
+        #        }
 
     }
 
